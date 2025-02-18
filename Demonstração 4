@@ -1,0 +1,18 @@
+package Package;
+
+import java.util.Scanner;
+
+public class Principal {
+	
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		char c;
+		System.out.println("Digite um caractere: ");
+		c = teclado.next().charAt(0);
+		
+		System.out.println("Caractere digitado: " +c);
+		
+	}
+
+}
