@@ -1,0 +1,48 @@
+package Package;
+
+import java.util.Scanner;
+
+public class Principal {
+	
+	public static void main(String[] args) {
+		
+		//Declaração de dados
+		int idade;
+		idade = 18;
+		char c = 'r';
+		double d = 7.35;
+		float f = 3.14f;
+		String nome = "Eduardo";
+		
+		//Saída de dados
+		System.out.println(c);
+		System.out.println(idade);
+		System.out.println(d);
+		System.out.println(f);
+		System.out.println(nome); 
+		
+		int n;
+		double x;
+		String texto;
+		Scanner teclado = new Scanner(System.in);
+		
+		//Lendo um texto
+		System.out.println("Digite um texto: ");
+		texto = teclado.nextLine();
+		
+		//Lendo um número
+		System.out.println("Digite um int: ");
+		n = teclado.nextInt();
+		System.out.println("Digite um float");
+		x = teclado.nextDouble();
+				
+		//Saída do texto
+		System.out.println("O texto digitado foi: " +texto);
+		
+		//Saída do número
+		System.out.println("O inteiro digitado foi: "+n);
+		System.out.println("O float digitado foi: "+x);
+		
+	}
+
+}
