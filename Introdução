@@ -1,0 +1,23 @@
+• POO - Programação Orientada a Objetos
+• JAVA - Linguagem importada, maquina virtual, "emulador"
+• Laucher 
+  - Eclipse (Launcher)
+• Interpretador 
+  - JVM (Java Virtual Machine) - Funções básicas
+  - JDK (Java Development Kit) - Funções mais diversas
+• Programação incial: LM & Assembly,
+  - FORTRAN, ALGOL 60, COBOL
+  - Pascal, Smaltalk, C, Basic
+  - C++. Object Pascal / Objective C
+  - VisualBASIC. Oak, Python, PHP, Ruby, JAVA, C#
+
+• JAVA
+  - Similar ao C/C++
+  - Foco em economizar tempo
+    - Vasta biblioteca pronta
+    - Exigência de atendimento ao padrões mais modernos
+    - Compartibilidade quase universal
+  - Foco em Dispositivos Embarcados
+  - Microsserviços
+  - Executa em múltiplas plataformas graças ao Interpretador Java
+  
