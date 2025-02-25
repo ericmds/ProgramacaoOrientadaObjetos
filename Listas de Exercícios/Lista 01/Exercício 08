@@ -1,0 +1,26 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio08 {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		int num1, num2;
+		
+		System.out.println("Informe dois valores");
+		System.out.print("Primeiro valor: ");
+		num1 = teclado.nextInt();
+		System.out.print("Segundo valor: ");
+		num2 = teclado.nextInt();
+		
+		if(num1 % num2 == 0) {
+			System.out.println("O número " +num1+ " é múltiplo de "+num2);
+		} else {
+			System.out.println("O número " +num1+ " não é múltiplo de "+num2);
+		}
+		
+		teclado.close();
+	}
+}
