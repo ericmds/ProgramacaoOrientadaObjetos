@@ -1,0 +1,34 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio02 {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		double precoCombustivel = 4.90, valorTotal, mediaConsumo = 0, lucroLiquido;
+		int odomInicial, odomFinal, odomTotal, combustivelGasto;
+		
+		System.out.println("Informe o odômetro inicial do carro: ");
+		odomInicial = teclado.nextInt();
+		System.out.println("Informe o odômetro final do carro: ");
+		odomFinal = teclado.nextInt();
+		System.out.println("Informe a quantidade de litros de combustível gasto: ");
+		combustivelGasto = teclado.nextInt();
+		System.out.println("Infome o valor total recebido (em reais): ");
+		valorTotal = teclado.nextDouble();
+		
+		odomTotal = odomFinal - odomInicial;
+		lucroLiquido = valorTotal - (combustivelGasto * precoCombustivel);
+		if (combustivelGasto != 0)
+			mediaConsumo = odomTotal / combustivelGasto;
+		else
+			System.out.println("O combustível gasto não pode ser zero");
+		
+		System.out.println("A média do consumo em KM/l foi de: "+mediaConsumo);
+		System.out.println("O lucro líquido do dia foi de : R$"+lucroLiquido);
+		
+		teclado.close();
+	}
+}
