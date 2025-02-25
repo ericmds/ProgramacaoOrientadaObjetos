@@ -1,0 +1,65 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio10 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        int opcao;
+        double num1, num2, operacao;
+
+        do {
+            System.out.print("Informe o primeiro número: ");
+            num1 = teclado.nextDouble();
+            System.out.print("Informe o segundo número: ");
+            num2 = teclado.nextDouble();
+
+            System.out.println("\n*** OPÇÕES DISPONÍVEIS ***");
+            System.out.println("1 - SOMAR");
+            System.out.println("2 - SUBTRAIR");
+            System.out.println("3 - MULTIPLICAR");
+            System.out.println("4 - DIVIDIR");
+            System.out.println("0 - ENCERRAR");
+            System.out.print("\nEscolha uma opção: ");
+            opcao = teclado.nextInt();
+
+            switch (opcao) {
+                case 1: //somar
+                    operacao = num1 + num2;
+                    System.out.printf("Resultado da soma: %.2f\n\n", operacao);
+                    break;
+
+                case 2: //subtrair
+                    operacao = num1 - num2;
+                    System.out.printf("Resultado da subtração: %.2f\n\n", operacao);
+                    break;
+
+                case 3: //multiplicarr
+                    operacao = num1 * num2;
+                    System.out.printf("Resultado da multiplicação: %.2f\n\n", operacao);
+                    break;
+
+                case 4: //dividir
+                    if (num2 != 0) {
+                        operacao = num1 / num2;
+                        System.out.printf("Resultado da divisão: %.2f\n\n", operacao);
+                    } else {
+                        System.out.println("Não é possível realizar uma divisão por zero!\n\n");
+                    }
+                    break;
+
+                case 0:
+                    System.out.println("Programa encerrado!");
+                    break;
+
+                default:
+                    System.out.println("Opção inválida!\n\n");
+                    break;
+            }
+
+        } while (opcao != 0);
+
+        teclado.close();
+    }
+}
