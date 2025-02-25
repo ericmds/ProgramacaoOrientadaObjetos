@@ -1,0 +1,26 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio09 {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+
+		int idade;
+		
+		System.out.println("Informe uma idade para verificar a situação do eleitor");
+		System.out.print("Idade: ");
+		idade = teclado.nextInt();
+		
+		if(idade < 16) {
+			System.out.printf("A pessoa com %d anos não está apta a votar", idade);
+		}else if (idade >= 16 & idade < 18 || idade > 70) {
+			System.out.printf("A pessoa com %d anos não é obrigada a votar, pois seu voto é facultativo", idade);
+		}else {
+			System.out.printf("A pessoa com %d anos é obrigada a votar", idade);
+		}
+		
+		teclado.close();
+	}
+}
