@@ -1,0 +1,45 @@
+package exercicios;
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Exercicio07 {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		double num1, num2, num3;
+		double maior;
+		
+		System.out.println("Informe três valores para verificar qual é o maior");
+		System.out.print("Primeiro número: ");
+		num1 = teclado.nextDouble();
+		System.out.print("Segundo número: ");
+		num2 = teclado.nextDouble();
+		System.out.print("Terceiro número: ");
+		num3 = teclado.nextDouble();
+		
+		if (num1 > num2 && num1 > num3) {
+			maior = num1;
+			System.out.printf("O primeiro número (%.2f) é o maior\n", maior);
+		} else if (num2 > num1 && num2 > num3) {
+			maior = num2;
+			System.out.printf("O segundo número (%.2f) é o maior\n", maior);
+		}else if (num3 > num1 && num3 > num2){
+			maior = num3;
+			System.out.printf("O terceiro número (%.2f) é o maior\n", maior);
+		}else {
+			System.out.println("Os números precisam ser diferentes");
+		}
+		
+        double[] numeros = {num1, num2, num3};
+        Arrays.sort(numeros);
+        
+        System.out.println("Os valores em ordem crescente são:");
+        for (double num : numeros) {
+            System.out.println(num);
+        }
+		
+		teclado.close();
+	}
+}
