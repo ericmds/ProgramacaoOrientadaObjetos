@@ -1,0 +1,36 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio05 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+        int x, y;
+
+        System.out.println("Informe um ponto x, y");
+        System.out.print("Ponto x: ");
+        x = teclado.nextInt();
+        System.out.print("Ponto y: ");
+        y = teclado.nextInt();
+
+        if (x == 0 && y == 0) {
+            System.out.println("O ponto x = " + x + " e y = " + y + " se encontra na ORIGEM");
+        } else if (x == 0) {
+            System.out.println("O ponto x = " + x + " e y = " + y + " se encontra sobre o eixo Y");
+        } else if (y == 0) {
+            System.out.println("O ponto x = " + x + " e y = " + y + " se encontra sobre o eixo X");
+        } else if (x > 0 && y > 0) {
+            System.out.println("O ponto x = " + x + " e y = " + y + " se encontra no PRIMEIRO quadrante");
+        } else if (x < 0 && y > 0) {
+            System.out.println("O ponto x = " + x + " e y = " + y + " se encontra no SEGUNDO quadrante");
+        } else if (x < 0 && y < 0) {
+            System.out.println("O ponto x = " + x + " e y = " + y + " se encontra no TERCEIRO quadrante");
+        } else {
+            System.out.println("O ponto x = " + x + " e y = " + y + " se encontra no QUARTO quadrante");
+        }
+        
+        teclado.close();
+    }
+}
