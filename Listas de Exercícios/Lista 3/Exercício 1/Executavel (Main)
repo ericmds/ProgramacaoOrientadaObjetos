@@ -1,0 +1,38 @@
+package pkg;
+
+import java.util.Scanner;
+
+public class Executavel {
+/*1 - Crie uma classe chamada Carro que possua 3 atributos: marca, modelo e anoFabricacao. Além disso, crie uma classe executável para criar 2 objetos do tipo Carro e exibir na tela os valores dos atributos criados.*/
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		Carro c1 = new Carro();
+		Carro c2 = new Carro();
+		
+		System.out.print("Informe a marca do primeiro carro: ");
+		c1.marca = teclado.nextLine();
+		System.out.print("Informe o modelo do primeiro carro: ");
+		c1.modelo = teclado.nextLine();
+		System.out.print("Informe o ano de fabricação do primeiro carro: ");
+		c1.anoFabricado = teclado.nextDouble();
+		teclado.nextLine();
+		
+		System.out.print("\nInforme a marca do segundo carro: ");
+		c2.marca = teclado.nextLine();
+		System.out.print("Informe o modelo do segundo carro: ");
+		c2.modelo = teclado.nextLine();
+		System.out.print("Informe o ano de fabricação do segundo carro: ");
+		c2.anoFabricado = teclado.nextDouble();
+		System.out.println();
+		teclado.nextLine();
+		
+		System.out.println("Primeiro carro");
+		System.out.print("Marca: " +c1.marca+ " | Modelo: " +c1.modelo+ " | Ano de fabricação: "+c1.anoFabricado);
+		System.out.println("\nSegundo carro");
+		System.out.print("Marca: " +c2.marca+ " | Modelo: " +c2.modelo+ " | Ano de fabricação: "+c2.anoFabricado);
+
+		teclado.close();
+	}
+
+}
