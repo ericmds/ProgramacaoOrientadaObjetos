@@ -1,0 +1,19 @@
+package pkg;
+
+public class Exemplo02 {
+
+	public static void main(String[] args) {
+		Pessoa p1 = new Pessoa();
+		Pessoa p2 = new Pessoa();
+		Pessoa p3 = new Pessoa();
+		p1.idade = 30;
+		p2.idade = 40;
+		p3.idade = 46;
+		
+		System.out.println("Idade da pessoa 1: "+p1.idade);
+		System.out.println("Idade da pessoa 2: "+p2.idade);
+		System.out.println("Idade da pessoa 3: "+p3.idade);
+
+	}
+
+}
