@@ -1,0 +1,22 @@
+package pkg;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Pessoa p = new Pessoa();
+		System.out.println("Pessoa instanciada!");
+		p.nome = "Éric";
+		p.idade = 24;
+		System.out.println("Nome 1: "+p.nome);
+		System.out.println("Idade 1: "+p.idade);
+		//Instanciem e atribuam nova classe
+		
+		Pessoa p2 = new Pessoa();
+		p2.nome = "Rodrigo";
+		p2.idade = 47;
+		System.out.println("Nome 2: "+p2.nome);
+		System.out.println("Idade 2: "+p2.idade);
+
+	}
+
+}
