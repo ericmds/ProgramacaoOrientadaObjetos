@@ -1,0 +1,31 @@
+package exercicio04;
+
+import java.util.Scanner;
+
+public class Livro {
+	public String titulo;
+	public String autor;
+	public int anoPublicacao;
+	
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		Livro l = new Livro();
+		
+		System.out.print("Informe o titulo: ");
+		l.titulo = teclado.nextLine();
+		System.out.print("Informe o autor: ");
+		l.autor = teclado.nextLine();
+		System.out.print("Informe o ano de publicação: ");
+		l.anoPublicacao = teclado.nextInt();
+		teclado.nextLine();
+		
+		System.out.println("\nDados do livro");
+		System.out.println("Titulo: "+l.titulo);
+		System.out.println("Autor: "+l.autor);
+		System.out.println("Ano de publicação: "+l.anoPublicacao);
+		
+		teclado.close();
+	}
+
+}
