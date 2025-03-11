@@ -1,0 +1,32 @@
+package pkg;
+
+import java.util.Scanner;
+
+public class Disciplina {
+
+	public static void main(String[] args) {
+		Professor p = new Professor();
+		Laboratorio l= new Laboratorio();
+		
+		p.nome = "Ricardo da Silva";
+		l.local = "Sala 311/P4";
+		
+		System.out.println("O nome do professor é: "+p.nome);
+		System.out.println("O local da sala é: "+l.local);
+		
+		Professor p2 = new Professor();
+		Laboratorio l2 = new Laboratorio();
+	
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.print("\nInforme o nome do professor: ");
+		p2.nome = teclado.nextLine();
+		System.out.print("Informe o local da sala: ");
+		l2.local = teclado.nextLine();
+		
+		System.out.println("O nome do professor é: "+p2.nome);
+		System.out.println("O local da sala é: "+l2.local);
+	}
+
+}
