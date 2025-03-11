@@ -1,0 +1,37 @@
+package exercicio02;
+
+import java.util.Scanner;
+
+public class ComputadorExe {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		Computador c1 = new Computador();
+		Computador c2 = new Computador();
+		
+		System.out.print("Informe a marca do computador: ");
+		c1.marca = teclado.nextLine();
+		System.out.print("Informe o modelo do computador: ");
+		c1.modelo = teclado.nextLine();
+		System.out.print("Informe o tipo do computador: ");
+		c1.tipo = teclado.nextLine();
+		System.out.print("Informe o preço do computador: ");
+		c1.preco = teclado.nextDouble();
+		teclado.nextLine();
+		
+		c2.marca = "Acer";
+		c2.modelo = "Nitro V";
+		c2.tipo = "Notbook";
+		c2.preco = 5881.18;
+		
+		System.out.println("\nPrimeiro computador");
+		System.out.println("Marca: " +c1.marca+ " | Modelo: " +c1.modelo+ " | Tipo: " +c1.tipo+ " | Preço: " +c1.preco);
+		
+		System.out.println("\nSegundo computador");
+		System.out.println("Marca: " +c2.marca+ " | Modelo: " +c2.modelo+ " | Tipo: " +c2.tipo+ " | Preço: " +c2.preco);
+		
+		teclado.close();
+	}
+
+}
