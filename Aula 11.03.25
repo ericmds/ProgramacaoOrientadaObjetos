@@ -1,6 +1,27 @@
 ORM - Mapeamento Objeto RelacionaL 
 
 • Uma classe é uma estrutura que abstrai um conjunto de objetos com característica similares
-• Classe define o comportamento dos objetos através de métodos e atributos (praticamente um molde)
-  ↳ Métodos = funções na linguagem estruturada
-  ↳ Atributos = variáveis na lingugaem estruturada
+• Classe define o comportamento dos objetos através de métodos e atributos → ("praticamente um molde")
+  ↳ Métodos = funções na linguagem estruturada → ("comportamento")
+  ↳ Atributos = variáveis na lingugaem estruturada → ("caracteristicas do objeto")
+
+• Linguagem UML → Linguagem Universal de Modelagem
+  ↳ Padrão para modelagem de sistemas
+  ↳ Amplamente difundida e consolidade
+  ↳ Largamente utilizada na industria de software
+
+• Objeto é a instância de uma classe → "struct"
+  ↳ Ex: Classe carro e Objeto Gol
+
+• Estado e Comportamento
+ → O estado de um objeto é representado por seus atributos
+ → O comportamento é representado pelos seus métodos
+ → Exemplo:
+   → Classe Carro
+     ↳ Objeto Gol
+        ↳ Atributos: modelo, ano, cor, estado
+        ↳ Métodos: ligar, desligar
+
+• Encapsulamento:
+  ↳ é o empacotamento dos atributos e métodos em uma classe
+  ↳ proteção de dados
