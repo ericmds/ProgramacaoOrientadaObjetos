@@ -1,0 +1,6 @@
+ORM - Mapeamento Objeto RelacionaL 
+
+• Uma classe é uma estrutura que abstrai um conjunto de objetos com característica similares
+• Classe define o comportamento dos objetos através de métodos e atributos (praticamente um molde)
+  ↳ Métodos = funções na linguagem estruturada
+  ↳ Atributos = variáveis na lingugaem estruturada
