@@ -1,0 +1,9 @@
+package pkg;
+
+public class Pessoa {
+		//public String nome = "Ricardo";
+		//public int idade = 23;
+		public String nome;
+		public int idade;
+
+	}
