@@ -1,0 +1,36 @@
+package ExemploLocadora;
+
+public class Carro {
+	public String marca;
+	public String modelo;
+	public boolean alugado;
+	
+	public boolean veficaAlugado() {
+		return alugado;
+	}
+	
+	public void alugar() {
+		if(!veficaAlugado()) {
+			alugado = true;
+			System.out.println("Carro alugado!");
+		}else {
+			System.out.println("Carro não disponível para locação!");
+		}
+	}
+	
+	public void devolver() {
+		if(veficaAlugado()) {
+			alugado = false;
+			System.out.println("Carro devolvido!");
+		}else {
+			System.out.println("Carro não alugado. Não é possivel devolução");
+		}
+			
+	}
+	
+	public void exibirDados() {
+		System.out.println("Marca: "+marca);
+		System.out.println("Modelo: "+modelo);
+		System.out.println("Alugado: "+alugado);
+	}
+}
