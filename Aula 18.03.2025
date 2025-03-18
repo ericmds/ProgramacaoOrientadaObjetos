@@ -1,0 +1,9 @@
+⮛ Construtores → ↳ ⮛
+  → Utilizado para inicializar um objeto de uma classe
+  → Java requer uma chamada de construtor para todo objeto que é criado
+  ...
+  → O constrututor deve ter o mesmo nome da classe
+  → Ele deve sempre retornar nada (void)
+  → palavra-clave "new" chama o construtor da classe para realizar a inicialização
+  → É possível ter mais de um construtor em uma classe
+    ↳ Mas os parametros devem ser diferentes;
