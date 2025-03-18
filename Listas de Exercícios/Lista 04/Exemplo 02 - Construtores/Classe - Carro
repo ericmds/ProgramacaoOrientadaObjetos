@@ -1,0 +1,26 @@
+package ExemploConstrutores;
+
+public class Carro {
+	public String marca;
+	public String modelo;
+	
+	public Carro(String modeloCarro) {
+		modelo = modeloCarro;
+	}
+
+	public Carro(String modeloCarro, String marcaCarro) {
+		modelo = modeloCarro;
+		marca = marcaCarro;
+	}
+	
+	public Carro(){ // Quando não tenho construtor, o compilador compreende isso!
+		
+	}
+	
+	
+	public void exibirDados() {
+		System.out.println("Marca: "+marca);
+		System.out.println("Modelo: "+ modelo);
+	}
+
+}
