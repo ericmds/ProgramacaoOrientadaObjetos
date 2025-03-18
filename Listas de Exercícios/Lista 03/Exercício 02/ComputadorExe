@@ -22,7 +22,7 @@ public class ComputadorExe {
 		
 		c2.marca = "Acer";
 		c2.modelo = "Nitro V";
-		c2.tipo = "Notbook";
+		c2.tipo = "Notebook";
 		c2.preco = 5881.18;
 		
 		System.out.println("\nPrimeiro computador");
