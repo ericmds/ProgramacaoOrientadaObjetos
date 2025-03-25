@@ -157,3 +157,28 @@ public class Exemplo05 {
 }
 
 ```
+
+## Exemplo 6
+```
+package Exemplo_06;
+
+public class Exemplo06 {
+
+	public static void main(String[] args) {
+		// Exemplo 6: Divisão por zero
+		
+		int a = 10;
+		int b = 0;
+		
+		try {
+			System.out.println(a/b); // ArithmeticException;
+		} catch(Exception e){
+			System.out.println("Execeção: " + e.getMessage());
+			System.out.println("Execeção: " + e.toString());
+		}
+		System.out.println("O programa segue em execução!");
+	}
+
+}
+
+```
