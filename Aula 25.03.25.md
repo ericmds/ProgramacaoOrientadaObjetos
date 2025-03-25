@@ -160,7 +160,7 @@ public class Exemplo05 {
 
 ## Exemplo 6
 ```
-package Exemplo_06;
+package Exemplos_06;
 
 public class Exemplo06 {
 
@@ -172,13 +172,25 @@ public class Exemplo06 {
 		
 		try {
 			System.out.println(a/b); // ArithmeticException;
-		} catch(Exception e){
+		} catch(Exception e){ // ou catch(ArithmeticException) para exceção específica{
 			System.out.println("Execeção: " + e.getMessage());
 			System.out.println("Execeção: " + e.toString());
 		}
 		System.out.println("O programa segue em execução!");
+		
+		String numero = "abc";
+		
+		try{
+			int n = Integer.parseInt(numero);
+			System.out.println("Convertido: "+n);
+		} catch (NumberFormatException e){
+			System.out.println("Exceção de formato: "+ e.toString());
+		} catch(Exception e){
+			System.out.println("Exceção: " + e.getMessage());
+			System.out.println("Exceção: " + e.toString());
+		}
+			
 	}
 
 }
-
 ```
