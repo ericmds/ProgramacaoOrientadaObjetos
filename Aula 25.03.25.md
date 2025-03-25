@@ -116,7 +116,7 @@ public class Exemplo03 {
 
 ## Exemplo 4
 ```
-package Exemplo04;
+package Exemplo_04;
 
 public class Exemplo04 {
 	public static void main(String[] args) {
@@ -132,4 +132,28 @@ public class Exemplo04 {
 		System.out.println("Agora não"); // Aqui já não executa
 	}
 }
+```
+
+## Exemplo 5
+```
+package Exemplo_05;
+
+public class Exemplo05 {
+	public static void main(String[] args) {
+		int[] numeros = {1, 2, 3};
+		try {
+			System.out.println(numeros[3]); // Isso que vai dar erro | ArrayIndexOutOfBoundsException
+		} catch(ArrayIndexOutOfBoundsException e){
+			System.out.println("Exceção: " +e.getMessage());
+			System.out.println("Exceção: " +e.toString());
+		}
+		catch(Exception e) {
+			System.out.println("Exceção: "+e.toString());
+		}
+		System.out.println("O programa segue em execução!");
+		System.out.println(numeros[3]); // Fora do try, aqui vai gerar um erro que irá encerrar o programa
+		System.out.println("Agora não"); // Aqui já não executa
+	}
+}
+
 ```
