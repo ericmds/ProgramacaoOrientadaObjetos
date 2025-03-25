@@ -1,6 +1,31 @@
 # ✦ Exercícios sobre <ins>Tratamento de exceções</ins>
 ## 1 - Escreva um programa que solicita ao usuário para digitar um número inteiro e exiba a raiz quadrada desse número. Certifique-se de que o programa trate adequadamente as exceções se o usuário digitar um valor inválido, por exemplo, ler um char ou string.Faça o tratamento de exceções em uma calculadora.
+```
+package Exercícios;
 
+import java.util.Scanner;
+
+public class Exercício01 {
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		int numero;
+		double raiz;
+		
+		System.out.print("Digite um número inteiro: ");
+		
+		
+		try {
+			numero = teclado.nextInt();
+			raiz = Math.sqrt(numero);
+			System.out.println(+raiz);
+		} catch (Exception e){
+		System.out.println("Exeção: " +e.getMessage());	
+		System.out.println("Exeção: " +e.toString());	
+		}
+		
+	}
+}
+```
 ## 2 – Faça o tratamento de exceções em uma calculadora.
 
 ## 3 – Faça o tratamento de exceções em conversões de valores lidos pelo teclado. Por exemplo, ao ler uma string e converter ela para double.
