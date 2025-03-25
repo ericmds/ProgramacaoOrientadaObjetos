@@ -17,13 +17,16 @@ public class Exercício01 {
 		try {
 			numero = teclado.nextInt();
 			raiz = Math.sqrt(numero);
-			System.out.println(+raiz);
+			System.out.println("Raiz quadrada de " +numero+ " = " +raiz);
 		} catch (Exception e){
-		System.out.println("Exeção: " +e.getMessage());	
-		System.out.println("Exeção: " +e.toString());	
+			System.out.println("Erro encontrado!");
+			System.out.println("Exeção: " +e.toString());	
 		}
+		System.out.println("Seguindo execução do progama...");
 		
+		teclado.close();
 	}
+	
 }
 ```
 ## 2 – Faça o tratamento de exceções em uma calculadora.
