@@ -1,5 +1,5 @@
 # ✦ Exercícios sobre <ins>Tratamento de exceções</ins>
-## 1 - Escreva um programa que solicita ao usuário para digitar um número inteiro e exiba a raiz quadrada desse número. Certifique-se de que o programa trate adequadamente as exceções se o usuário digitar um valor inválido, por exemplo, ler um char ou string.Faça o tratamento de exceções em uma calculadora.
+## 1 - Escreva um programa que solicita ao usuário para digitar um número inteiro e exiba a raiz quadrada desse número. Certifique-se de que o programa trate adequadamente as exceções se o usuário digitar um valor inválido, por exemplo, ler um char ou string.
 ```
 package Exercícios;
 
