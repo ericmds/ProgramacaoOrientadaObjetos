@@ -180,7 +180,7 @@ public class Principal_03 {
 
 ## 4 – Pesquise quais são as Exceções existentes que já possuem tratamento e explique brevemente como cada uma funciona. Teste duas exceções.
 
-Em java, uma exceção é "erro" que acontece no meio da execução do programa que acaba encerrando o programa. Existe dois grupos principais de exceções	
+Em Java, uma exceção é um tipo de erro que ocorre durante a execução do programa e pode resultar no seu encerramento. Existem dois grupos principais de exceções:
 
 ### Checked Exceptions (Exceções Verificadas)
 * Ocorrem em tempo de compilação e precisam ser tratadas pelo programador usando try-catch ou declaradas com throws.
