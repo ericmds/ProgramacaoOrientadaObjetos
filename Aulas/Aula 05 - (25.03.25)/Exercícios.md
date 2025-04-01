@@ -190,22 +190,22 @@ Em Java, uma exceção é um tipo de erro que ocorre durante a execução do pro
 ### Principais Exeções e Como Funcionam
 * ArithmeticException
 	* Tipo: Unchecked (Runtime)
-		* Descrição: Ocorre quando há um erro matemático, como divisão por zero.
+	* Descrição: Ocorre quando há um erro matemático, como divisão por zero.
 * ArrayIndexOutOfBoundsException
 	* Tipo: Unchecked (Runtime)
-		* Descrição: Ocorre quando tentamos acessar uma posição inválida de um array.
+	* Descrição: Ocorre quando tentamos acessar uma posição inválida de um array.
 * NumberFormatException
 	* Tipo: Unchecked (Runtime)
-		* Descrição: Lançada quando tentamos converter uma String em um número inválido.
+	* Descrição: Lançada quando tentamos converter uma String em um número inválido.
 * NullPointerException
 	* Tipo: Unchecked (Runtime)
-		* Descrição: Ocorre ao tentar acessar um objeto nulo.
+	* Descrição: Ocorre ao tentar acessar um objeto nulo.
 * IOException
 	* Tipo: Checked
-		* Descrição: Relacionada a erros de entrada e saída, como falha ao abrir um arquivo.	
+	* Descrição: Relacionada a erros de entrada e saída, como falha ao abrir um arquivo.	
 * FileNotFoundException
 	* Tipo: Checked
-		* Descrição: Ocorre quando um arquivo não é encontrado no caminho especificado.
+	* Descrição: Ocorre quando um arquivo não é encontrado no caminho especificado.
 * ClassNotFoundException
 	* Tipo: Checked
  	* Descrição: Lançada quando uma classe não pode ser carregada.
