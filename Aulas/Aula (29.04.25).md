@@ -124,15 +124,39 @@ public class Principal {
 ## Exemplo 2
 ### Classe Pessoa
 ```java
+package Exemplo2;
 
+public class Pessoa {
+	
+	public void trabalhar() {
+		System.out.println("Trabalhando");
+	}
+}
 ```
 ### Classe Programador
 ```java
+package Exemplo2;
 
+public class Programador extends Pessoa{
+	public void trabalhar() {
+		System.out.println("Programando");
+	}
+
+}
 ```
 ### Classe Principal
 ```java
+package Exemplo2;
 
+public class Principal {
+	public static void main(String[] agrs) {
+		Pessoa pe = new Pessoa();
+		pe.trabalhar();
+		
+		Programador pro = new Programador();
+		pro.trabalhar();
+	}
+}
 ```
 
 ---
@@ -140,12 +164,65 @@ public class Principal {
 ## Exemplo 3
 ### Classe Calculadora
 ```java
+package Exemplo3;
 
+public class Calculadora {
+	public int Somar(int x, int y) {
+		System.out.println("\nUsando int com 2 variaveis");
+		return x + y;
+	}
+
+	public int Somar(int x, int y, int z) {
+		System.out.println("\nUsando int com 3 variaveis");
+		return x + y + z;
+	}
+	
+	public double Somar (double x, double y) {
+		System.out.println("\nUsando double com 2 variaveis");
+		return x + y;
+	}
+	
+	public int Multiplica(int x, int y) {
+		System.out.println("\nUsando double com 2 variais");
+		return x * y;
+	}
+	
+	public double Multiplica(double x, double y) {
+		System.out.println("\nUsando double com 2 variais");
+		return x * y;
+	}
+}
 ```
 
 ### Classe Principal
 ```java
+package Exemplo3;
 
+public class Principal {
+
+	public static void main(String[] args) {
+		Calculadora c = new Calculadora();
+		
+		int resultado1 = c.Somar(5, 7);
+		System.out.println("Resultado 1: " + resultado1);
+		
+		int resultado2 = c.Somar(5, 7, 5);
+		System.out.println("Resultado 1: " + resultado2);
+		
+		double resultado3 = c.Somar(3.5, 7.0);
+		System.out.println("Resultado 3: " + resultado3);
+		
+		double resultado4 = c.Somar(3, 7);
+		System.out.println("Resultado 4: " + resultado4);
+		
+		int resultado5 = c.Multiplica(5, 5);
+		System.out.println("Resultado 5: " + resultado5);
+		
+		double resultado6 = c.Multiplica(2.5, 4.5);
+		System.out.println("Resultado 5: " + resultado6);
+	}
+
+}
 ```
 
 ---
@@ -153,10 +230,32 @@ public class Principal {
 ## Exemplo 4
 ### Classe Pessoa
 ```java
+package Exemplo4;
 
+public class Pessoa {
+	public void dizerOla() {
+		System.out.println("Olá");
+	}
+	
+	public void dizerOla(String nome) {
+		System.out.println("Olá, <"+nome+">!.");
+	}
+}
 ```
 
 ### Classe Principal
 ```java
+package Exemplo4;
 
+public class Principal {
+
+	public static void main(String[] args) {
+		Pessoa p = new Pessoa();
+		
+		p.dizerOla();
+		p.dizerOla("Eric");
+
+	}
+
+}
 ```
