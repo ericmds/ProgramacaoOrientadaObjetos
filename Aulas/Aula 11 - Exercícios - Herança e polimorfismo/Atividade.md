@@ -3,9 +3,9 @@
 04) Crie uma classe ContaBancaria com um método depositar(double valor) que adiciona o valorpassado como parâmetro ao saldo da conta. Sobrecarregue o método depositar() para aceitar umobjeto Cheque e adicionar o valor do cheque ao saldo da conta.
 05) Crie uma classe Produto com um método calcularPrecoFinal(double preco) que retorna opreço final do produto com base no preço passado como parâmetro. Sobrecarregue o métodocalcularPrecoFinal() para aceitar um objeto Cliente e calcular o preço final do produto com base no desconto do cliente.
 06) Crie uma classe base Funcionario com atributos como nome e salario. Deriveclasses específicas como Gerente e Desenvolvedor. Gerente possui um bônus anual,enquanto Desenvolvedor tem horas extras.
-  * Implemente métodos sobrecarregados aumentarSalario que aumentam o saláriobaseado em diferentes critérios (porcentagem fixa para todos e uma porcentagemadicional para Gerente que considera o bônus).
-  * Sobrescreva o método toString para refletir informações específicas de cada tipode funcionário.
-  * Crie um array de Funcionario que inclua Gerente e Desenvolvedor, e demonstre a aplicação dos aumentos de salário e a impressão das informações.
+   * Implemente métodos sobrecarregados aumentarSalario que aumentam o saláriobaseado em diferentes critérios (porcentagem fixa para todos e uma porcentagemadicional para Gerente que considera o bônus).
+   * Sobrescreva o método toString para refletir informações específicas de cada tipode funcionário.
+   * Crie um array de Funcionario que inclua Gerente e Desenvolvedor, e demonstre a aplicação dos aumentos de salário e a impressão das informações.
 07) Crie uma classe Notificacao com um método enviar. Derive classes como NotificacaoEmail e NotificacaoApp que extendem Notificacao.
   * Sobrecarregue o método enviar em NotificacaoEmail para aceitar um ou mais destinatários.
   * Sobrescreva o método enviar em cada classe derivada para implementar a lógica específica de envio.
