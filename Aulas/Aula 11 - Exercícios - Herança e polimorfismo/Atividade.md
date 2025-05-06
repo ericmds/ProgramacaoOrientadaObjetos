@@ -1,8 +1,84 @@
 # Exercícios - Herança e polimorfismo 
 ## 02) Crie uma classe Produto com um método desconto(). Em seguida, crie uma classeProdutoComDesconto que herda da classe Produto e sobrescreve o método desconto() paracalcular o desconto do produto com base em um valor predefinido e imprimir o preço comdesconto.
-### Classe
+### Classe Produto
 ```java
+package Exercicio02;
 
+public class Produto {
+	protected String produto;
+	protected double preco;
+
+	public Produto(String produto, double preco) {
+		this.produto = produto;
+		this.preco = preco;
+	}
+
+	public String getProduto() {
+		return produto;
+	}
+
+	public void setProduto(String produto) {
+		this.produto = produto;
+	}
+
+	public double getPreco() {
+		return preco;
+	}
+
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+
+	public void desconto() {
+		System.out.println("Produto: " + produto);
+		System.out.printf("Preço original: R$%.2f", preco);
+	}
+}
+```
+### Classe ProdutoComDesconto
+```java
+package Exercicio02;
+
+public class ProdutoComDesconto extends Produto {
+	protected double quantidadeDesconto;
+
+	public ProdutoComDesconto(String produto, double preco, double quantidadeDesconto) {
+		super(produto, preco);
+		this.quantidadeDesconto = quantidadeDesconto;
+	}
+
+	public void desconto() {
+		double valorDesconto = preco * (quantidadeDesconto / 100);
+		double produtoDesconto = preco - valorDesconto;
+
+		System.out.println("Produto: " + produto);
+		System.out.println("Desconto: " + valorDesconto);
+		System.out.println(produto + " com desconto de " + quantidadeDesconto + "% = R$" + produtoDesconto);
+	}
+}
+```
+### Classe Principal
+```java
+package Exercicio02;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+
+		Produto p = new Produto("Fusca", 7699.90);
+		p.desconto();
+
+		System.out.println("\n");
+
+		ProdutoComDesconto pd = new ProdutoComDesconto("Fusca", 7699.90, 50);
+		pd.desconto();
+
+		teclado.close();
+	}
+}
 ```
 
 ## 03) Crie uma classe Funcionario com um método calcularSalario(). Em seguida, crie uma classeGerente que herda da classe Funcionario e sobrescreve o método calcularSalario() para calcularo salário do gerente com base em um bônus e imprimir o resultado.
