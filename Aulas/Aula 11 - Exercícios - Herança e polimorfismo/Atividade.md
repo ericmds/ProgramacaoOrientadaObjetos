@@ -138,9 +138,73 @@ public class Principal {
 ```
 
 ## 04) Crie uma classe ContaBancaria com um método depositar(double valor) que adiciona o valorpassado como parâmetro ao saldo da conta. Sobrecarregue o método depositar() para aceitar umobjeto Cheque e adicionar o valor do cheque ao saldo da conta.
-### Classe
+### Classe ContaBancaria
 ```java
+package Exercicio04;
 
+public class ContaBancaria {
+    private double saldo;
+    private double saltoTotal;
+
+    public ContaBancaria(double saldo) {
+        this.saldo = saldo;
+    }
+
+    // Método para depositar um valor direto
+    public void depositar(double valor) {
+        saltoTotal = saldo + valor; // Atualiza o saldo
+        System.out.println("Saldo da Conta Bancária");
+        System.out.println("Antes do depósito: R$" + saltoTotal);
+        System.out.println("Depois do depósito: R$" + saltoTotal);
+    }
+
+    // Sobrecarga do método depositar para aceitar um objeto Cheque
+    public void depositar(Cheque c) {
+        double valorCheque = c.getValor(); // Pega o valor do cheque
+        saldo += valorCheque; // Atualiza o saldo
+        System.out.println("Saldo da Conta Bancária");
+        System.out.println("Antes do depósito (Cheque): R$" + saltoTotal);
+        System.out.println("Depois do depósito (Cheque): R$" + saltoTotal);
+    }
+}
+```
+### Classe Cheque
+```java
+package Exercicio04;
+
+public class Cheque {
+    private double valor;
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+}
+```
+### Classe Principal
+```java
+package Exercicio04;
+
+public class Principal {
+
+    public static void main(String[] args) {
+        // Cria uma conta bancária com saldo inicial de 2000
+        ContaBancaria cb = new ContaBancaria(2000);
+        
+        // Depósito de valor diretamente na conta
+        cb.depositar(500); // Depósito de 500 em dinheiro
+        
+        // Cria um cheque com valor de 500
+        Cheque c = new Cheque();
+        c.setValor(500);
+        
+        // Depósito do cheque na conta
+        cb.depositar(c); // Depósito do cheque de 500
+    }
+}
 ```
 
 ## 05) Crie uma classe Produto com um método calcularPrecoFinal(double preco) que retorna opreço final do produto com base no preço passado como parâmetro. Sobrecarregue o métodocalcularPrecoFinal() para aceitar um objeto Cliente e calcular o preço final do produto com base no desconto do cliente.
@@ -162,9 +226,48 @@ public class Principal {
 * Sobrecarregue o método enviar em NotificacaoEmail para aceitar um ou mais destinatários.
 * Sobrescreva o método enviar em cada classe derivada para implementar a lógica específica de envio.
 * Demonstre o envio de diferentes tipos de notificações usando objetos das classes derivadas.
-### Classe
+### Classe Notificacao
 ```java
+package Exercicio07;
 
+public class Notificacao {
+	public void enviar() {
+		System.out.println("Notificação enviada");
+	}
+}
+```
+### Classe NotificacaoEmail
+```java
+package Exercicio07;
+
+public class NotificacaoEmail extends Notificacao {
+	protected int destinatarios;
+
+	public int getDestinatarios() {
+		return destinatarios;
+	}
+
+	public void setDestinatarios(int destinatarios) {
+		this.destinatarios = destinatarios;
+	}
+
+	public void enviar() {
+		System.out.println("Notificação enviada para " + destinatarios + " destinatarios...");
+		for (int i = 0; i < destinatarios; i++) {
+			System.out.println("Destinatario " + (i + 1) + ": Notificação enviada para o email");
+		}
+	}
+}
+```
+### Classe NotificacaoApp
+```java
+package Exercicio07;
+
+public class NotificacaoApp extends Notificacao {
+	public void enviar() {
+		System.out.println("Enviando notificação para o aplicativo");
+	}
+}
 ```
 
 ## 08) Crie uma classe Reserva com métodos para adicionar e cancelar reservas. Derive classes como ReservaDeHotel e ReservaDeVoo da classe Reserva.
