@@ -82,9 +82,59 @@ public class Principal {
 ```
 
 ## 03) Crie uma classe Funcionario com um método calcularSalario(). Em seguida, crie uma classeGerente que herda da classe Funcionario e sobrescreve o método calcularSalario() para calcularo salário do gerente com base em um bônus e imprimir o resultado.
-### Classe
+### Classe Funcionario
 ```java
+package Exercicio03;
 
+public class Funcionario {
+	protected double salario;
+
+	public Funcionario(double salario) {
+		this.salario = salario;
+	}
+
+	public void calcularSalario() {
+		System.out.println("Salário do funcionário");
+		System.out.println("R$" + salario);
+	}
+}
+```
+### Classe Gerente
+```java
+package Exercicio03;
+
+public class Gerente extends Funcionario {
+	protected double bonus;
+
+	public Gerente(double salario, double bonus) {
+		super(salario);
+		this.bonus = bonus;
+	}
+
+	public void calcularSalario() {
+		double salarioTotal = salario + bonus;
+		System.out.println("Salário do Gerente");
+		System.out.println("R$" + salarioTotal);
+	}
+}
+```
+### Classe Principal
+```java
+package Exercicio03;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Funcionario f = new Funcionario(2000);
+		f.calcularSalario();
+
+		System.out.println();
+		
+		Gerente g = new Gerente(3000, 348);
+		g.calcularSalario();
+
+	}
+}
 ```
 
 ## 04) Crie uma classe ContaBancaria com um método depositar(double valor) que adiciona o valorpassado como parâmetro ao saldo da conta. Sobrecarregue o método depositar() para aceitar umobjeto Cheque e adicionar o valor do cheque ao saldo da conta.
