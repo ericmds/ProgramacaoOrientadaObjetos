@@ -1,5 +1,9 @@
 # Exercícios - Herança e polimorfismo 
 ## 02) Crie uma classe Produto com um método desconto(). Em seguida, crie uma classeProdutoComDesconto que herda da classe Produto e sobrescreve o método desconto() paracalcular o desconto do produto com base em um valor predefinido e imprimir o preço comdesconto.
+### Classe
+```java
+
+```
 
 ## 03) Crie uma classe Funcionario com um método calcularSalario(). Em seguida, crie uma classeGerente que herda da classe Funcionario e sobrescreve o método calcularSalario() para calcularo salário do gerente com base em um bônus e imprimir o resultado.
 
