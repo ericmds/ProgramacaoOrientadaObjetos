@@ -41,6 +41,8 @@ public class Principal {
 }
 ```
 
+---
+
 # Exemplo 2
 ## Classe Produto
 ```java
@@ -100,6 +102,8 @@ public class Principal {
 
 }
 ```
+
+---
 
 # Exemplo 3
 ## Classe Produto
